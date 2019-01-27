@@ -191,3 +191,10 @@ padding-left: 50px;
 }
 
 
+/* Cross on Buttons */
+
+.btn-floating.halfway-fab {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
