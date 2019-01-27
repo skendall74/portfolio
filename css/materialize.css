@@ -3,6 +3,7 @@
  * Copyright 2014-2017 Materialize
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
+
 .materialize-red {
   background-color: #e51c23 !important;
 }
@@ -1658,7 +1659,6 @@
 .orange-text {
   color: #ff9800 !important;
 }
-
 .orange.lighten-5 {
   background-color: #fff3e0 !important;
 }
@@ -5123,8 +5123,7 @@ small {
   left: 0;
   max-width: 100%;
   padding: 24px;
-}
-
+  }
 .card .card-content {
   padding: 24px;
   border-radius: 0 0 2px 2px;
