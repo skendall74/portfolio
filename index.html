@@ -3,30 +3,49 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <!-- Viewport  -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
-  <!-- Title  -->
-  <title>Shannon Kendall's Website</title>
-  <!-- Gogle Fonts  -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900" rel="stylesheet">
-  <!-- CSS  -->
-  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <title>Shannon Kendall</title>
+
+  <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+
+  <!-- VENDOR CSS AND STYLE IMPORTS -->
+  <!-- Dev Icons -->
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <!--Import Material Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <!-- Import FontAwesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+    crossorigin="anonymous">
+  <!-- Import Google Fonts  -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900" rel="stylesheet">
+  <!-- Materialize Font  -->
+  <link type="text/css" rel="stylesheet" href="./assets/vendor/materialize/css/materialize.min.css" media="screen,projection" />
+  <!-- Import AOS CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- Custom CSS Font  -->
+  <link href="./assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
 </head>
 
 <body>
-  <!-- Dropdown Structure -->
-  <nav>
-    <div class="nav-wrapper #5e35b1 deep-purple darken-1">
+
+<!-- navbar background -->
+
+  <!-- Navbar Structure -->
+  <section class="navbar-fixed #5e35b1 deep-purple darken-1">
+    <nav class="transparent z-depth-0">
       <!-- Inline Style Materlize  -->
       <a href="#!" class="brand-logo"></a>
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+        <i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="contact.html">Contact Me</a></li>
+        <li><a href="#landing">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
         <ul id="dropdown1" class="dropdown-content">
           <li><a href="https://sammysosa23.github.io/Project1/">YouTube Video Finder</a></li>
           <li><a href="https://skendall74.github.io/Word-Guess-Game/">Hangman Game</a></li>
@@ -38,15 +57,18 @@
         <!-- Dropdown Trigger -->
         <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Projects<i class="material-icons right">arrow_drop_down</i></a></li>
       </ul>
-    </div>
-  </nav>
+    </nav>
+  </section>
 
   <!-- SideNav  -->
   <ul class="sidenav" id="mobile-demo">
     <h4>Site Links</h4>
-    <li><a href="about.html">About Me</a></li>
-    <li><a href="resume.html">Resume</a></li>
-    <li><a href="contact.html">Contact Me</a></li>
+    <li><a href="#landing">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
     <hr>
     <h4>Projects</h4>
     <li><a href="https://sammysosa23.github.io/Project1/">YouTube Video Finder</a></li>
@@ -57,43 +79,99 @@
     <li><a href="https://skendall74.github.io/TrainSchedule/">Train Scheduler</a></li>
   </ul>
 
-  <!-- Intro Area  -->
-  <div class="section no-pad-bot" id="index-banner">
-    <div class="container">
-      <br><br>
-      <h1 class="header center Blue-text">Shannon Kendall</h1>
-      <div class="row center">
-        <h5 class="header col s12 light">Software Engineer and Full Stack Developer</h5>
-      </div>
-      <div class="row center">
-        <a href="contact.html" id="download-button" class="btn-large waves-effect waves-light orange">CONTACT
-          ME</a>
-      </div>
-      <br><br>
-    </div>
+  <!-- navbar background -->
+  <div id='nav-bg'></div>
+
+  <!-- FIXED ACTION BUTTON -->
+  <div class="fixed-action-btn vertical">
+    <a class="btn-floating btn-large lighten-5 waves-effect waves-purple right">
+      <i class="fas fa-link purple-icon"></i>
+    </a>
+    <ul>
+      <li><a class="btn-floating purple darken-1" href="./assets/docs/ShannonKendallResume.pdf" download><i class="fas fa-file-download"></i></a></li>
+      <li><a class="btn-floating red darken-4" href="mailto:shannonckendall.com"><i class="fas fa-envelope"></i></a></li>
+      <li><a class="btn-floating blue darken-4" href="https://twitter.com/shannonkendall"><i class="fab fa-twitter"></i></a></li>
+      <li><a class="btn-floating blue darken-4" href="https://www.facebook.com/skendalluf"><i class="fab fa-facebook"></i></a></li>
+      <li><a class="btn-floating blue-grey darken-1" href="https://www.linkedin.com/in/shannonkendall/"><i class="fab fa-linkedin"></i></a></li>
+      <li><a class="btn-floating grey darken-3" href="https://github.com/skendall74"><i class="fab fa-github"></i></a></li>
+      <li><a class="btn-floating orange darken-3" href="https://stackoverflow.com/users/10520960/skendalluf"><i class="fab fa-stack-overflow"></i></a></li>
+    </ul>
   </div>
+
+  <!-- Intro Area  -->
+  <header class="section" id="landing">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m12 l5">
+          <div class="row center" id="hero">
+            <img src="./assets/images/shannon.png" alt="Shannon Kendall image" class="responsive-img circle col s8 m4 l2 offset-s2 offset-m4 offset-l5">
+            <h1 class="col s12 purple-text text-lighten-5">Shannon Kendall</h1>
+          </div>
+        </div>
+        <div class="col s12 m12 offset-l1 l6 container" id="about">
+          <div class="holder">
+            <h1 class="deepshadow">About Me</h1>
+            <p>
+              Hello. My name is Shannon Kendall. I am a Software Engineer and Full Stack Developer
+              here in Atlanta, Georgia. I just recently moved from Charlotte, where I was a Web
+              and Graphic Designer for eight years.
+            </p>
+            </br>
+            <p>
+              I am looking to build upon my expertise as a coder and my passion for problem
+              solving. For my free time, I love writing, watching baseball, football,
+              spending time with my wife, family and friends.
+            </p>
+            </br>
+            <p>
+              Recently, I have worked with HTML5 and CSS3 to build responsive websites. I’ve
+              managed and coordinated the design and marketing for multiple brands, including
+              logo and identity design. I have worked within teams overseeing professionals
+              from initiation to completion, creating and maintaining multiple websites.
+              Click through my site and contact me at your leisure.
+            </p>
+            </br>
+            <p><b>Scroll Down to see Projects and More</b></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
   <hr>
+
+  <!--Parallax-->
+  <section class="parallax-container">
+    <div class="parallax" id="parallax2"></div>
+  </section>
+
   <!-- First Set of Projects  -->
-  <div class="section white">
+  <div class="section" id="projects">
     <div class="row container">
       <div class="col m4">
+        <h1 class="deepshadow">Projects</h1>
         <div class="row">
           <div class="col m12">
-            <div class="card">
-              <span class="card-title">YouTube Finder</span>
-              <div class="card-image">
-                <img src="images/youtube.png" style="width:220px;">
+            <div class="card hoverable white lighten-2 sticky-action">
+              <span class="card-title">Youtube Video Finder</span>
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="./assets/images/youtube.png" style="width:220px;">
               </div>
               <div class="card-content">
                 <p>Application that will locate local videos via a Google Map API.</p>
-                <h6 class="card-subtitle mb-2 text-muted">GitHub</h6>
-                <a href="https://github.com/skendall74/Project1.git" target="blank_">
-                  <img src="images/github.png" alt="HTML tutorial" style="width:42px;height:42px;border:0;">
-                </a>
-                <a class="btn-floating halfway-fab waves-effect waves-light red" href="https://sammysosa23.github.io/Project1/"
-                  target="blank_">
-                  <i class="material-icons">add</i>
-                </a>
+                <div class="card-action container anchor-button">
+                  <div class="row">
+                    <a class="teal-text text-lighten-5 col s12 m5 btn  grey darken-3" target="_blank" href="https://github.com/skendall74/Project1.git"><i
+                        class="fab fa-github"></i></a>
+                    <a class="teal-text text-lighten-5 btn yellow darken-3 col s12 m5 offset-m2" target="_blank" href="https://sammysosa23.github.io/Project1/"><i
+                        class="fa fa-mouse-pointer"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-reveal #5e35b1 deep-purple darken-1">
+                <span class="card-title white-text text-white">Youtube Video Finder</span>
+                <br>
+                <p>Application that will locate local videos via a Google Map API</p>
               </div>
             </div>
           </div>
@@ -102,21 +180,26 @@
       <div class="col m4">
         <div class="row">
           <div class="col m12">
-            <div class="card">
+            <div class="card hoverable white lighten-2 sticky-action">
               <span class="card-title">Hangman Game</span>
-              <div class="card-image">
-                <img src="images/samus.jpg" style="width:220px;">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="./assets/images/samus.jpg" style="width:220px;">
               </div>
               <div class="card-content">
                 <p>Hangman game showing off Javascript skills.</p>
-                <h6 class="card-subtitle mb-2 text-muted">GitHub</h6>
-                <a href="https://github.com/skendall74/Word-Guess-Game.git" target="blank_">
-                  <img src="images/github.png" alt=" HTML tutorial" style="width:42px;height:42px;border:0;">
-                </a>
-                <a class="btn-floating halfway-fab waves-effect waves-light red" href="https://skendall74.github.io/Word-Guess-Game/"
-                  target="blank_">
-                  <i class="material-icons">add</i>
-                </a>
+                <div class="card-action container anchor-button">
+                  <div class="row">
+                    <a class="teal-text text-lighten-5 col s12 m5 btn  grey darken-3" target="_blank" href="https://github.com/skendall74/Word-Guess-Game.git"><i
+                        class="fab fa-github"></i></a>
+                    <a class="teal-text text-lighten-5 btn yellow darken-3 col s12 m5 offset-m2" target="_blank" href="https://skendall74.github.io/Word-Guess-Game/"><i
+                        class="fa fa-mouse-pointer"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-reveal #5e35b1 deep-purple darken-1">
+                <span class="card-title white-text text-white">Hangman Game</span>
+                <br>
+                <p>Hangman game showing off Javascript skills.</p>
               </div>
             </div>
           </div>
@@ -125,21 +208,26 @@
       <div class="col m4">
         <div class="row">
           <div class="col m12">
-            <div class="card">
+            <div class="card hoverable white lighten-2 sticky-action">
               <span class="card-title">Crystal Game</span>
-              <div class="card-image">
-                <img src="images/red-crystal.jpg" style="width:220px;">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="./assets/images/red-crystal.jpg" style="width:220px;">
               </div>
               <div class="card-content">
                 <p>Fun game highlighting a use of Jquery.</p>
-                <h6 class="card-subtitle mb-2 text-muted">GitHub</h6>
-                <a href="https://github.com/skendall74/unit-4-game.git" target="blank_">
-                  <img src="images/github.png" alt="HTML tutorial" style="width:42px;height:42px;border:0;">
-                </a>
-                <a class="btn-floating halfway-fab waves-effect waves-light red" href="https://skendall74.github.io/unit-4-game/"
-                  target="blank_">
-                  <i class="material-icons">add</i>
-                </a>
+                <div class="card-action container anchor-button">
+                  <div class="row">
+                    <a class="teal-text text-lighten-5 col s12 m5 btn  grey darken-3" target="_blank" href="https://github.com/skendall74/unit-4-game.git"><i
+                        class="fab fa-github"></i></a>
+                    <a class="teal-text text-lighten-5 btn yellow darken-3 col s12 m5 offset-m2" target="_blank" href="https://skendall74.github.io/unit-4-game/"><i
+                        class="fa fa-mouse-pointer"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-reveal #5e35b1 deep-purple darken-1">
+                <span class="card-title white-text text-white">Crystal Game</span>
+                <br>
+                <p>Fun game highlighting a use of Jquery.</p>
               </div>
             </div>
           </div>
@@ -147,31 +235,38 @@
       </div>
     </div>
   </div>
-  <!-- Shot of Atlanta  -->
-  <div class="parallax-container">
-    <div class="parallax"><img src="images/atlanta.jpg"></div>
-  </div>
+
+  <!--Parallax-->
+  <section class="parallax-container">
+    <div class="parallax" id="parallax3"></div>
+  </section>
+
   <!-- Second Set of Projects  -->
   <div class="section white">
     <div class="row container">
       <div class="col m4">
         <div class="row">
           <div class="col m12">
-            <div class="card">
+            <div class="card hoverable white lighten-2 sticky-action">
               <span class="card-title">Cubs Trivia Game</span>
-              <div class="card-image">
-                <img src="images/cubs.jpg" style="width:220px;">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="./assets/images/cubs.jpg" style="width:220px;">
               </div>
               <div class="card-content">
                 <p>Javascript and Stop Timers in a Cubs Trivia Game.</p>
-                <h6 class="card-subtitle mb-2 text-muted">GitHub</h6>
-                <a href="https://github.com/skendall74/TriviaGame.git" target="blank_">
-                  <img src="images/github.png" alt="HTML tutorial" style="width:42px;height:42px;border:0;">
-                </a>
-                <a class="btn-floating halfway-fab waves-effect waves-light red" href="https://skendall74.github.io/TriviaGame/"
-                  target="blank_">
-                  <i class="material-icons">add</i>
-                </a>
+                <div class="card-action container anchor-button">
+                  <div class="row">
+                    <a class="teal-text text-lighten-5 col s12 m5 btn  grey darken-3" target="_blank" href="https://github.com/skendall74/TriviaGame.git"><i
+                        class="fab fa-github"></i></a>
+                    <a class="teal-text text-lighten-5 btn yellow darken-3 col s12 m5 offset-m2" target="_blank" href="https://skendall74.github.io/TriviaGame/"><i
+                        class="fa fa-mouse-pointer"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-reveal #5e35b1 deep-purple darken-1">
+                <span class="card-title white-text text-white">Cubs Trivia Game</span>
+                <br>
+                <p>Javascript and Stop Timers in a Cubs Trivia Game.</p>
               </div>
             </div>
           </div>
@@ -180,22 +275,26 @@
       <div class="col m4">
         <div class="row">
           <div class="col m12">
-            <div class="card">
+            <div class="card hoverable white lighten-2 sticky-action">
               <span class="card-title">College Football Gifs</span>
-              <div class="card-image">
-                <img src="images/gators.png" style="width:220px;">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="./assets/images/gators.png" style="width:220px;">
               </div>
               <div class="card-content">
                 <p>API Calls, Javascript and JQuery- College Football Gifs.</p>
-                <h6 class="card-subtitle mb-2 text-muted">GitHub</h6>
-                <a href="https://github.com/skendall74/GifTastic.git" target="blank_">
-                  <img src="images/github.png" alt="HTML tutorial" style="width:42px;height:42px;border:0;">
-                </a>
-                <a class="btn-floating halfway-fab waves-effect waves-light red" href="https://skendall74.github.io/GifTastic/"
-                  target="
-  blank_">
-                  <i class="material-icons">add</i>
-                </a>
+                <div class="card-action container anchor-button">
+                  <div class="row">
+                    <a class="teal-text text-lighten-5 col s12 m5 btn  grey darken-3" target="_blank" href="https://github.com/skendall74/GifTastic.git"><i
+                        class="fab fa-github"></i></a>
+                    <a class="teal-text text-lighten-5 btn yellow darken-3 col s12 m5 offset-m2" target="_blank" href="https://skendall74.github.io/GifTastic/"><i
+                        class="fa fa-mouse-pointer"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-reveal #5e35b1 deep-purple darken-1">
+                <span class="card-title white-text text-white">College Football Gifs</span>
+                <br>
+                <p>API Calls, Javascript and JQuery- College Football Gifs.</p>
               </div>
             </div>
           </div>
@@ -204,21 +303,26 @@
       <div class="col m4">
         <div class="row">
           <div class="col m12">
-            <div class="card">
+            <div class="card hoverable white lighten-2 sticky-action">
               <span class="card-title">Train Scheduler</span>
-              <div class="card-image">
-                <img src="images/train.jpg" style="width:220px;">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="./assets/images/train.jpg" style="width:220px;">
               </div>
               <div class="card-content">
                 <p>Train Scheduler and Firebase Database Work.</p>
-                <h6 class="card-subtitle mb-2 text-muted">GitHub</h6>
-                <a href="https://github.com/skendall74/TrainSchedule.git" target="blank_">
-                  <img src="images/github.png" alt="HTML tutorial" style="width:42px;height:42px;border:0;">
-                </a>
-                <a class="btn-floating halfway-fab waves-effect waves-light red" href="https://skendall74.github.io/TrainSchedule/"
-                  target="blank_">
-                  <i class="material-icons">add</i>
-                </a>
+                <div class="card-action container anchor-button">
+                  <div class="row">
+                    <a class="teal-text text-lighten-5 col s12 m5 btn  grey darken-3" target="_blank" href="https://github.com/skendall74/TrainSchedule.git"><i
+                        class="fab fa-github"></i></a>
+                    <a class="teal-text text-lighten-5 btn yellow darken-3 col s12 m5 offset-m2" target="_blank" href="https://skendall74.github.io/TrainSchedule"><i
+                        class="fa fa-mouse-pointer"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-reveal #5e35b1 deep-purple darken-1">
+                <span class="card-title white-text text-white">Train Scheduler</span>
+                <br>
+                <p>Train Scheduler and Firebase Database Work.</p>
               </div>
             </div>
           </div>
@@ -226,42 +330,231 @@
       </div>
     </div>
   </div>
-  <!-- Footer Left Side -->
-  <footer class="page-footer #5e35b1 deep-purple darken-1">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Shannon Kendall Bio</h5>
-          <p class="grey-text text-lighten-4">I have created interactive media and led new design initiatives
-            as an experienced Digital Designer. I have specialized as a Web Designer, Graphic Designer, Front End
-            Developer and UI/UX Designer.</p>
-          </br>
-          <p class="grey-text text-lighten-4">Recently, I have worked with HTML5 and CSS3 to build responsive
-            websites. I’ve managed and coordinated the design and marketing for multiple brands, including logo and
-            identity design. I have worked within teams overseeing professionals from initiation to completion creating
-            and maintaining multiple websites.</p>
-          </br>
-          <p class="grey-text text-lighten-4">I pride myself on being able to adapt to situations and work
-            within any group. I have independently studied PHP,.ASP.Net and other programming, so I can work within
-            the code, to ensure my web designs are controlled and
-            appear the way I want them to appear.</p>
-        </div>
-        <!-- Footer Right Side  -->
-        <div class="col l3 s12">
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="index.html" target="">Homepage</a></li>
-            <br>
-            <li><a class="white-text" href="mailto:shannonckendall@gmail.com" target="_blank">shannonckendall@gmail.com</a></li>
-            <br>
-            <li><a class="white-text" href="https://www.linkedin.com/in/shannonkendall/" target="_blank">LinkedIn</a></li>
-            <br>
-            <li><a class="white-text" href="https://github.com/skendall74/" target="_blank">GitHub</a></li><br>
-            <li><a class="white-text" href="assets/ShannonKendallResume.pdf" target="_blank">Resume</a></li>
 
+  <!--Parallax-->
+  <section class="parallax-container">
+    <div class="parallax" id="parallax4"></div>
+  </section>
+
+  <!-- Footer Left Side -->
+  <div class="container" id="experience">
+    <div class="row">
+      <div class="col s12 m12 l6 container">
+        <div class="row progress-wrapper">
+          <div class="progress-block col s12">
+            <h5 class="progress-header-title">Creative Design</h5>
+            <div class="progress-item">
+              <div class="determinate purple lighten-5 ">
+                <div class="progress purple darken-4" style="width: 90%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="progress-block col s12">
+            <h5 class="progress-header-title">UX / UI Design</h5>
+            <div class="progress-item">
+              <div class="determinate purple lighten-5 ">
+                <div class="progress purple darken-4" style="width: 80%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="progress-block col s12">
+            <h5 class="progress-header-title">Front End Development</h5>
+            <div class="progress-item">
+              <div class="determinate purple lighten-5 ">
+                <div class="progress purple darken-4" style="width: 70%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="progress-block col s12">
+            <h5 class="progress-header-title">Back End Development</h5>
+            <div class="progress-item">
+              <div class="determinate purple lighten-5 ">
+                <div class="progress purple darken-4" style="width: 50%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="progress-block col s12">
+            <h5 class="progress-header-title">System Engineering</h5>
+            <div class="progress-item">
+              <div class="determinate purple lighten-5 ">
+                <div class="progress purple darken-4" style="width: 55%"></div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <a href="./assets/docs/ShannonKendallResume.pdf"><button class="btn-large purple lighten-5 purple-text text-darken-4 font-weight-bold">Download
+              My Resume</button></a>
         </div>
+      </diV>
+      <!-- Footer Right Side  -->
+      <div class="col l6 s12" id="skills">
+        <div class="row">
+          <h1 class="deepshadow">Skills</h1>
+        </div>
+        <div class="row center skills-row">
+          <div class="col s12 m12 l3">
+            <i class="devicon-amazonwebservices-plain-wordmark devicon purple-text text-deep-purple darken-1"></i>
+          </div>
+          <!-- <div class="col s12 m12 l3">
+            <i class="devicon-angularjs-plain-wordmark devicon purple-text text-deep-purple darken-1"></i>
+          </div> -->
+          <!-- <div class="col s12 m12 l3">
+            <i class="devicon-apache-plain devicon purple-text text-deep-purple darken-1"></i>
+          </div> -->
+          <div class="col s12 m12 l3">
+            <i class="devicon-bootstrap-plain devicon purple-text text-deep-purple darken-1"></i>
+          </div>
+          <div class="col s12 m12 l3">
+            <i class="devicon-cplusplus-plain-wordmark devicon purple-text text-deep-purple darken-1"></i>
+          </div>
+          <div class="col s12 m12 l3">
+            <i class="devicon-css3-plain-wordmark devicon purple-text text-deep-purple darken-1"></i>
+          </div>
+          <!-- <div class="col s12 m12 l3">
+            <i class="devicon-django-plain  devicon purple-text text-deep-purple darken-1"></i>
+          </div> -->
+          <!-- <div class="col s12 m12 l3">
+            <i class="devicon-docker-plain-wordmark  devicon purple-text text-deep-purple darken-1"></i>
+          </div> -->
+          <div class="col s12 m12 l3">
+            <i class="devicon-dot-net-plain-wordmark devicon purple-text text-deep-purple darken-1"></i>
+          </div>
+          <!-- <div class="col s12 m12 l3">
+            <i class="devicon-drupal-plain devicon purple-text text-deep-purple darken-1"></i>
+          </div> -->
+          <div class="col s12 m12 l3">
+            <i class="devicon-express-original-wordmark devicon purple-text text-deep-purple darken-1"></i>
+          </div>
+          <div class="col s12 m12 l3">
+            <i class="devicon-git-plain-wordmark  devicon purple-text ttext-deep-purple darken-1"></i>
+          </div>
+          <div class="col s12 m12 l3">
+            <i class="devicon-github-plain-wordmark devicon purple-text text-deep-purple darken-1"></i>
+          </div>
+          <!-- <div class="col s12 m12 l3">
+            <i class="devicon-go-plain devicon purple-text text-deep-purple darken-1"></i>
+          </div> -->
+          <div class="col s12 m12 l3">
+            <i class="devicon-gulp-plain devicon purple-text text-deep-purple darken-1"></i>
+          </div>
+          <div class="col s12 m12 l3">
+            <i class="devicon-heroku-original-wordmark devicon purple-text text-deep-purple darken-1"></i>
+          </div>
+          <div class="col s12 m12 l3">
+            <i class="devicon-illustrator-plain devicon purple-text text-deep-purple darken-1"></i>
+          </div>
+          <div class="col s12 m12 l3">
+            <i class="devicon-html5-plain-wordmark devicon purple-text text-deep-purple darken-1"></i>
+          </div>
+          <div class="col s12 m12 l3">
+            <i class="devicon-inkscape-plain-wordmark devicon purple-text text-deep-purple darken-1"></i>
+          </div>
+          <!-- <div class="col s12 m12 l3">
+            <i class="devicon-java-plain-wordmark devicon purple-text text-deep-purple darken-1"></i>
+          </div> -->
+          <!-- <div class="col s12 m12 l3">
+            <i class="devicon-java-plain devicon purple-text text-deep-purple darken-1"></i>
+          </div> -->
+          <div class="col s12 m12 l3">
+            <i class="devicon-javascript-plain devicon purple-text text-deep-purple darken-1"></i>
+          </div>
+          <div class="col s12 m12 l3">
+            <i class="devicon-jquery-plain-wordmark devicon purple-text text-deep-purple darken-1"></i>
+          </div>
+          <!-- <div class="col s12 m12 l3">
+            <i class="devicon-linux-plain devicon purple-text text-deep-purple darken-1"></i>
+          </div> -->
+          <div class="col s12 m12 l3">
+            <i class="devicon-mongodb-plain-wordmark devicon purple-text text-deep-purple darken-1"></i>
+          </div>
+          <div class="col s12 m12 l3">
+            <i class="devicon-mysql-plain-wordmark devicon purple-text text-deep-purple darken-1"></i>
+          </div>
+          <div class="col s12 m12 l3">
+            <i class="devicon-nodejs-plain-wordmark devicon purple-text text-deep-purple darken-1"></i>
+          </div>
+          <div class="col s12 m12 l3">
+            <i class="devicon-photoshop-plain devicon purple-text text-deep-purple darken-1"></i>
+          </div>
+          <div class="col s12 m12 l3">
+            <i class="devicon-php-plain devicon purple-text text-deep-purple darken-1"></i>
+          </div>
+          <!-- <div class="col s12 m12 l3">
+              <i class="devicon-postgresql-plain devicon purple-text text-deep-purple darken-1"></i>
+          </div> -->
+          <!-- <div class="col s12 m12 l3">
+            <i class="devicon-python-plain-wordmark devicon purple-text text-deep-purple darken-1"></i>
+          </div> -->
+          <div class="col s12 m12 l3">
+            <i class="devicon-react-original-wordmark devicon purple-text text-deep-purple darken-1"></i>
+          </div>
+          <!-- <div class="col s12 m12 l3">
+            <i class="devicon-ruby-plain-wordmark devicon purple-text text-deep-purple darken-1"></i>
+          </div> -->
+          <!-- <div class="col s12 m12 l3">
+            <i class="devicon-sass-original devicon purple-text text-deep-purple darken-1"></i>
+          </div> -->
+          <!-- <div class="col s12 m12 l3">
+            <i class="devicon-swift-plain-wordmark devicon purple-text text-deep-purple darken-1"></i>
+          </div> -->
+          <div class="col s12 m12 l3">
+            <i class="devicon-visualstudio-plain-wordmark devicon purple-text text-deep-purple darken-1"></i>
+          </div>
+          <!-- <div class="col s12 m12 l3">
+            <i class="devicon-vuejs-plain-wordmark devicon purple-texttext-deep-purple darken-1"></i>
+          </div> -->
+          <div class="col s12 m12 l3">
+            <i class="devicon-wordpress-plain devicon purple-text text-deep-purple darken-1"></i>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!--Parallax-->
+  <section class="parallax-container">
+    <div class="parallax" id="parallax5"></div>
+  </section>
+
+  <footer class="page-footer #5e35b1 deep-purple darken-1" id="contact">
+
+    <div class="container center">
+      <h1 class="mailshadow">Contact Me</h1>
+      <div class="row white-text text-lighten-5">
+        <form class="col s12">
+          <div class="row purple-text text-lighten-5">
+            <div class="input-field col s12 m6">
+              <i class="material-icons prefix">account_circle</i>
+              <input id="icon_name" type="text" class="validate">
+              <label for="icon_name">Name</label>
+            </div>
+            <div class="input-field col s12 m6">
+              <i class="material-icons prefix">domain</i>
+              <input id="icon_domain" type="text" class="validate">
+              <label for="icon_domain">Company</label>
+            </div>
+            <div class="input-field col s12 m6">
+              <i class="material-icons prefix">phone</i>
+              <input id="icon_telephone" type="tel" class="validate">
+              <label for="icon_telephone">Telephone</label>
+            </div>
+            <div class="input-field col s12 m6">
+              <i class="material-icons prefix">email</i>
+              <input id="icon_email" type="email" class="validate">
+              <label for="icon_email">Email</label>
+            </div>
+            <div class="input-field col s12 m10 offset-m1">
+              <i class="material-icons prefix">message</i>
+              <textarea id="message" class="materialize-textarea"></textarea>
+              <label for="message">Your Message</label>
+            </div>
+            <button type="submit" id="contactSubmit" class="btn btn-large submit-btn #322c58 lighten-1 waves-effect waves-purple">
+              Submit
+            </button>
+          </div>
+        </form>
       </div>
     </div>
     <!-- Foot -->
@@ -275,10 +568,23 @@
     </div>
   </footer>
 
+  <!-- VENDOR JS IMPORTS -->
+  <!-- Import JQuery -->
+  <script type="text/javascript" src="assets/vendor/JQuery/jquery-3.3.1.min.js"></script>
+  <!-- Import Materialize js -->
+  <script type="text/javascript" src="./assets/vendor/materialize/js/materialize.min.js"></script>
+  <!-- Import Animate on Scroll JS -->
+  <script type="text/javascript" src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- Import EmailJS -->
+  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+
   <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
+  <script type="text/javascript" src="./assets/js/email.js"></script>
+  <script src="./assets/js/app.js"></script>
 
 </body>
 
