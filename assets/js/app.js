@@ -14,7 +14,6 @@ $('.dropdown-trigger').dropdown();
 })(jQuery); // end of jQuery name space
 
 // Fixed Action Button
-
 $(document).ready(function () {
   $('.fixed-action-btn').floatingActionButton();
 });

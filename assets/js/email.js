@@ -36,4 +36,3 @@ $("#contactSubmit").on("click", e => {
     $("#message").val("");
     $("#icon_telephone").val("");
 });
-
