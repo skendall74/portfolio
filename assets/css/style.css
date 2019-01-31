@@ -1,4 +1,6 @@
-/* Custom Stylesheet */
+/* Portfolio Custom Stylesheet  */
+
+/* General */
 
 html {
   overflow-y: auto;
@@ -8,7 +10,21 @@ body {
   background: linear-gradient(to right, #E7E7E7, white, #E7E7E7);
 }
 
-/* Google Fonts for Header Tags */
+/* Icon Blocks */
+.icon-block {
+  padding: 0 15px;
+}
+
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+.purple-text.text-darken-4:hover {
+  color: #FFF !important;
+}
+
+/* Header Tags */
+
 h1,
 h2,
 h3,
@@ -130,6 +146,9 @@ hr {
   z-index: 100;
 }
 
+
+/* Sections*/
+
 /* Top of the Page*/
 
 header {
@@ -172,19 +191,6 @@ header {
     display: none;
   }
 
-}
-
-/* Icon Blocks */
-.icon-block {
-  padding: 0 15px;
-}
-
-.icon-block .material-icons {
-  font-size: inherit;
-}
-
-.purple-text.text-darken-4:hover {
-  color: #FFF !important;
 }
 
 
@@ -236,12 +242,6 @@ header {
   background-attachment: fixed;
 }
 
-
-/* Room for Download Button - experience section */
-#experience {
-  padding-bottom: 10px;
-}
-
 /* Room for Skills  - skills section */
 
 .skills-row {
@@ -266,9 +266,10 @@ header {
 /* Card Title */
 
 
-.card-image  {
+.card-image {
   overflow: hidden;
   z-index: 0;
+  color: #6f7198;
 }
 
 .card .card-reveal {
@@ -280,10 +281,10 @@ header {
   padding-bottom: 0px !important;
 }
 
-
 .card-title {
   position: relative;
   bottom: 0px;
+  color: #6f7198;
 }
 
 /* Adjusting colors of over Project */
@@ -349,16 +350,6 @@ textarea.materialize-textarea:focus:not([readonly])+label {
   opacity: 50;
 }
 
-/* Card Title */
-card .card-image .card-title {
-  color: #6f7198;
-  bottom: 3;
-  padding: 35px 20px 0px 20px;
-  margin: 40px;
-  display: block;
-  font-weight: bold;
-  z-index: 750;
-}
 
 /* Random Fixes to Drop Down & Buttons Coloring  */
 .dropdown-content li>a,

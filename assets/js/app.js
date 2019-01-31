@@ -1,9 +1,11 @@
+// Portfolio Javascript
+
 // Nav Drop Down
 $('.dropdown-trigger').dropdown();
 
 // Side Nav
-(function($){
-  $(function(){
+(function ($) {
+  $(function () {
 
     $('.sidenav').sidenav();
 
@@ -11,20 +13,21 @@ $('.dropdown-trigger').dropdown();
 
 })(jQuery); // end of jQuery name space
 
- $(document).ready(function () {
-   $('.fixed-action-btn').floatingActionButton();
- });
+// Fixed Action Button
 
- // Materialize Card on Hover
- $(function () {
-   $('.card').hover(
-     function () {
-       $(this).find('> .card-image > img.activator').click();
-     },
-     function () {
-       $(this).find('> .card-reveal > .card-title').click();
-     }
-   );
- });
+$(document).ready(function () {
+  $('.fixed-action-btn').floatingActionButton();
+});
 
+// Materialize Card on Hover
 
+$(function () {
+  $('.card').hover(
+    function () {
+      $(this).find('> .card-image > img.activator').click();
+    },
+    function () {
+      $(this).find('> .card-reveal > .card-title').click();
+    }
+  );
+});
