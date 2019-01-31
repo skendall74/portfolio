@@ -263,6 +263,11 @@ header {
   color: #322c58 !important;
 }
 
+#contactSubmit:focus {
+  background-color: #322c58 !important;
+  color: #fff !important;
+}
+
 /* Card Title */
 
 
@@ -397,7 +402,7 @@ textarea.materialize-textarea:focus:not([readonly])+label {
 }
 
 .btn-floating:hover {
-  background-5e35b1: #322c58;
+  background-color: #322c58;
 }
 
 .sidenav li>a.btn-floating:hover {

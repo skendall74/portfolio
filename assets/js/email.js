@@ -1,5 +1,5 @@
 (function () {
-    emailjs.init("user_AIzaSyCJ5bhXqJMs8scpbwJQTA5sSjPpV8a1ZpU");
+    emailjs.init("user_ix2c9dvrdsdZevSF2btCc");
 })();
 
 // prevent page refresh with contact form
@@ -9,7 +9,7 @@ $("#contactSubmit").on("click", e => {
     var data = {
         service_id: 'gmail',
         template_id: 'template_Odi56vXo',
-        user_id: 'user_AIzaSyCJ5bhXqJMs8scpbwJQTA5sSjPpV8a1ZpU',
+        user_id: 'user_ix2c9dvrdsdZevSF2btCc',
         template_params: {
             "icon_email": $("#icon_email").val().trim(),
             "icon_name": $("#icon_name").val(),
@@ -36,3 +36,4 @@ $("#contactSubmit").on("click", e => {
     $("#message").val("");
     $("#icon_telephone").val("");
 });
+
