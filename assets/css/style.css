@@ -172,6 +172,7 @@ hr {
 
 #landing {
   z-index: 1;
+  position: relative;
   height: 100vh;
   background-image: radial-gradient(rgba(9, 53, 43, 0.767), rgba(60, 43, 124)), url("../images/parallax1.jpg");
   background-position: top center;
