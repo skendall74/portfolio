@@ -70,29 +70,10 @@ h1.deepshadow {
     0 22px 30px rgba(0, 0, 0, 0.9);
 }
 
-h1.topshadow {
-  color: #5e35b1;
-  letter-spacing: .1em;
-  text-shadow: 0 -1px 0 #5e35b1,
-    0 1px 0 #322c58,
-    0 2px 0 #322c58,
-    0 3px 0 #322c58,
-    0 4px 0 #322c58,
-    0 5px 0 #322c58,
-    0 6px 0 #322c58,
-    /* 0 7px 0 #222222,
-  0 8px 0 #202020,
-  0 9px 0 #1e1e1e,
-  0 10px 0 #1c1c1c,
-  0 11px 0 #1a1a1a,
-  0 12px 0 #181818,
-  0 13px 0 #161616,
-  0 14px 0 #141414,
-  0 15px 0 #121212, */
-    0 22px 30px rgba(0, 0, 0, 0.9);
-}
 
-h1.mailshadow {
+
+
+.mailshadow h1 {
   color: #FFF;
   letter-spacing: .1em;
   text-shadow: 0 -1px 0 #FFF,
@@ -113,16 +94,6 @@ h1.mailshadow {
   0 15px 0 #121212, */
     0 22px 30px rgba(0, 0, 0, 0.9);
 }
-
-@media only screen and (max-width: 600px) {
-
-h1.topshadow {
-  display: none;
-}
-
-}
-
-
 
 /* HR */
 
@@ -222,15 +193,27 @@ hr {
 
 #box  {
   height: 100%;
-  padding-top: 100px;
+  padding-top: 90px;
 }
 
 @media only screen and (max-width: 600px) {
 
-  #box {
+  #box, h1.deepshadow {
    display: none;
   }
 
+  #about {
+    padding: 20px 15px 20px 15px;
+
+  }
+
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+ 
+  #about  {
+    font-size: 10px;
+  }
 }
 
 
