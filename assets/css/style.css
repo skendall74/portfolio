@@ -162,7 +162,7 @@ hr {
 /*Pointer*/
 
 .card.sticky-action .card-action {
-  z-index: 0;
+  z-index: 1;
 }
 
 /* Sections*/
