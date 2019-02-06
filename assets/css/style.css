@@ -110,7 +110,7 @@ hr {
 
 .navbar-fixed {
   position: absolute;
-  z-index: 3;
+  z-index: 5;
 }
 
 /* Side Nav  */
@@ -156,13 +156,13 @@ hr {
   /* values below are for when fb msg fab is on */
   /* bottom: 100px;
     right: 25px; */
-  z-index: 5;
+  z-index: 2;
 }
 
 /*Pointer*/
 
 .card-action {
-  z-index: 4;
+  z-index: 1;
 }
 
 .waves-effect{
@@ -174,7 +174,7 @@ hr {
 /* Top of the Page*/
 
 #landing {
-  z-index: 2;
+  z-index: 4;
   position: relative;
   height: 100vh;
   background-image: radial-gradient(rgba(9, 53, 43, 0.767), rgba(60, 43, 124)), url("../images/parallax1.jpg");
@@ -224,7 +224,7 @@ hr {
 /*Parallax*/
 
 #nav-bg {
-  z-index: 1;
+  z-index: 3;
   background: #5e35b1;
   position: fixed;
   height: 65px;
