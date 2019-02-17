@@ -136,7 +136,7 @@ hr {
 
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 992px) {
 
   .sidenav {
     opacity: 100;
@@ -263,6 +263,14 @@ hr {
 
 #parallax5 {
   background-image: linear-gradient(to bottom, rgba(131, 119, 155, 0.164), rgba(60, 43, 124)), url("../images/parallax4.jpg");
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#parallax6 {
+  background-image: linear-gradient(to bottom, rgba(131, 119, 155, 0.164), rgba(60, 43, 124)), url("../images/business.jpg");
   background-position: bottom center;
   background-size: cover;
   background-repeat: no-repeat;
