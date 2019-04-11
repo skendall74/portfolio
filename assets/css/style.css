@@ -295,6 +295,32 @@ hr {
   background-attachment: fixed;
 }
 
+#parallax8 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(131, 119, 155, 0.164),
+      rgba(60, 43, 124)
+    ),
+    url("../images/parallax5.jpg");
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#parallax9 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(131, 119, 155, 0.164),
+      rgba(60, 43, 124)
+    ),
+    url("../images/family.jpg");
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 /* Skills Section */
 
 .skills-row {
